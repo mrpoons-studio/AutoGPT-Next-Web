@@ -54,8 +54,8 @@ dependencies:
     specifier: ^1.0.1
     version: 1.1.1
   axios:
-    specifier: ^0.26.0
-    version: 0.26.1
+    specifier: ^0.28.0
+    version: 0.28.0
   cheerio:
     specifier: ^1.0.0-rc.12
     version: 1.0.0-rc.12
@@ -76,7 +76,7 @@ dependencies:
     version: 22.5.1
   langchain:
     specifier: ^0.0.91
-    version: 0.0.91(axios@0.26.1)(cheerio@1.0.0-rc.12)(chromadb@1.6.1)
+    version: 0.0.91(axios@0.28.0)(cheerio@1.0.0-rc.12)(chromadb@1.6.1)
   micro:
     specifier: ^10.0.1
     version: 10.0.1
@@ -2681,6 +2681,16 @@ packages:
     resolution: {integrity: sha512-fPwcX4EvnSHuInCMItEhAGnaSEXRBjtzh9fOtsE6E1G6p7vl7edEeZe11QHf18+6+9gR5PbKV/sGKNaD8YaMeA==}
     dependencies:
       follow-redirects: 1.15.3
+    transitivePeerDependencies:
+      - debug
+    dev: false
+
+  /axios@0.28.0:
+    resolution: {integrity: sha512-Tu7NYoGY4Yoc7I+Npf9HhUMtEEpV7ZiLH9yndTCoNhcpBH0kwcvFbzYN9/u5QKI5A6uefjsNNWaz5olJVYS62Q==}
+    dependencies:
+      follow-redirects: 1.15.3
+      form-data: 4.0.0
+      proxy-from-env: 1.1.0
     transitivePeerDependencies:
       - debug
     dev: false
@@ -5570,7 +5580,7 @@ packages:
     engines: {node: '>=6'}
     dev: false
 
-  /langchain@0.0.91(axios@0.26.1)(cheerio@1.0.0-rc.12)(chromadb@1.6.1):
+  /langchain@0.0.91(axios@0.28.0)(cheerio@1.0.0-rc.12)(chromadb@1.6.1):
     resolution: {integrity: sha512-oCilhNDZDSt8rdvnuVv5J3BIZ1FwCccdqdO6xHddiCko26UkAJ+wKRWmV8YQOYUDZzoRjp4ogDIifETfhfb30w==}
     engines: {node: '>=18'}
     peerDependencies:
@@ -5716,7 +5726,7 @@ packages:
     dependencies:
       '@anthropic-ai/sdk': 0.4.4
       ansi-styles: 5.2.0
-      axios: 0.26.1
+      axios: 0.28.0
       binary-extensions: 2.2.0
       cheerio: 1.0.0-rc.12
       chromadb: 1.6.1
@@ -7383,6 +7393,10 @@ packages:
 
   /property-information@6.4.0:
     resolution: {integrity: sha512-9t5qARVofg2xQqKtytzt+lZ4d1Qvj8t5B8fEwXK6qOfgRLgH/b13QlgEyDh033NOS31nXeFbYv7CLUDG1CeifQ==}
+    dev: false
+
+  /proxy-from-env@1.1.0:
+    resolution: {integrity: sha512-D+zkORCbA9f1tdWRK0RaCR3GPv50cMxcrz4X8k5LTSUD1Dkw47mKJEZQNunItRTkWwgtaUSo1RVFRIG9ZXiFYg==}
     dev: false
 
   /psl@1.9.0:
